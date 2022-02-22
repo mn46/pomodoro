@@ -2,3 +2,39 @@ body {
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --dark-red: #DB524D;
+    --text-color: #343333;
+    --bright-red: #FFE2E1;
+    --green: #39C77A;
+    --light-green: #E5FBEC;
+    --white: #fff;
+}
+
+/* general */
+
+.button {
+    background-color: var(--green);
+    width: 8em;
+    height: 3em;
+    border-radius: 0.5em;
+}
+
+.button a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: circe-rounded, sans-serif;
+    font-weight: 400;
+}
+
+h1, h2 {
+    font-family: circe-rounded, sans-serif;
+
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
