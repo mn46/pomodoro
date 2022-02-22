@@ -62,8 +62,13 @@ nav {
     color: var(--white);
 }
 
-nav p:first-of-type {
+nav p:first-of-type, nav p:nth-child(2) {
     padding-right: 5%;
+    color: var(--white);
+}
+
+nav a {
+    text-decoration: none;
     color: var(--white);
 }
 
@@ -124,7 +129,6 @@ footer span:first-child, footer span:nth-child(2) {
 
 #banner_photo {
     background-image: url("assets/banner.png");
-    opacity: 70%;
 }
 
 /* home page - main */
@@ -176,6 +180,8 @@ a.link {
     text-align: center;
 }
 
+/* about */
+
 #about {
     margin-top: 10%;
     display: grid;
@@ -207,4 +213,281 @@ a.link {
     font-family: 'Poppins', sans-serif;
     line-height: 190%;
     color: var(--text-color);
+}
+
+/* timer */
+
+#timer_grid {
+    margin: 5% 20% 10% 20%;
+    display: grid;
+    grid-template-columns: 45% 35%;
+    grid-gap: 15%;
+}
+
+#mode span, #timer_container {
+    background-color: var(--bright-red);
+    border-radius: 0.3em;
+}
+
+#mode span:first-of-type {
+    background-color: var(--dark-red);
+    color: var(--white);
+}
+
+#mode {
+    margin-bottom: 4.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mode span {
+    padding: 4% 6%;
+    font-family: circe-rounded, sans-serif;
+}
+
+#timer_container {
+    padding-bottom: 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#circle {
+    margin-top: 10%;
+    height: 15em;
+    aspect-ratio: 1/1;
+    background-color: var(--dark-red);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle h1, #timer_container #circle p {
+    color: var(--white);
+}
+
+#circle h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+#timer_container #circle p {
+    margin-top: 0;
+}
+
+#timer_container p {
+    margin-top: 8%;
+    margin-bottom: 0;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+#timer_container h2 {
+    margin-top: 0;
+}
+
+#timer_container .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#timer_container .button p {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-family: circe-rounded, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#tasks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo, #done {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo_add {
+    width: 100%;
+    padding: 3%;
+    border: 0.1em dashed var(--dark-red);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#todo_add span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: 500;
+    color: var(--dark-red);
+}
+
+#todo_add span:first-child {
+    margin-right: 3%;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: var(--bright-red);
+    color: var(--dark-red);
+    border-radius: 0.2em;
+}
+
+#todo div:last-child {
+    margin-top: 4%;
+    width: 100%;
+    padding: 4%;
+    background-color: var(--bright-red);
+    border: 0.1em solid var(--dark-red);
+    border-radius: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--dark-red);
+    text-align: center;
+}
+
+#done {
+    margin-top: 10%;
+}
+
+#done h2 {
+    color: var(--green);
+}
+
+#done div {
+    width: 100%;
+    padding: 4%;
+    background-color: var(--light-green);
+    border: 0.1em solid var(--green);
+    border-radius: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--green);
+    text-align: center;
+}
+
+@media only screen and (max-width: 812px) {
+
+    /* general */
+
+    nav {
+        padding: 0 5%;
+        height: 4em;
+        background-color: var(--dark-red);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: var(--white);
+    }
+    
+    nav p:first-of-type, nav p:nth-child(2) {
+        padding-right: 0;
+    }
+    
+    footer {
+        padding: 0 2% 0 2%;
+    }
+    
+    /* banner */
+
+    #main_banner {
+        display: block;
+        height: 42em;
+        overflow: hidden;
+        background-image: url("assets/banner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #scroll p{
+        font-size: 1.1em;
+        font-weight: 500;
+        margin-top: 35%;
+    }
+
+    #banner_photo {
+        background-image: none;
+    }
+
+    /* home page - main */
+
+    #info, #instruction {
+        margin: 20% 7% 0 7%;
+    }
+
+    #info {
+        padding: 1% 5% 5% 5%;
+    }
+
+    /* instruction flexbox */
+
+    #icons {
+        margin-top: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .icon {
+        margin-top: 10%;
+        width: 12em;
+    }
+
+    .icon p {
+        margin-top: 10%;
+    }
+
+    /* about */
+
+    #about {
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 55%;
+    }
+
+    #description {
+        padding: 5% 8% 0 8%;
+    }
+    
+    #features {
+        padding: 5% 8% 20% 8%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #features ul {
+        margin-bottom: 7%;
+    }
+
+    #features .button {
+        height: 6em;
+        align-self: center;
+    }
+
+    /* timer */
+
+    #timer_grid {
+        margin: 10% 8% 25% 8%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 35%;
+        grid-gap: 15%;
+    }
+
+
 }

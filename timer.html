@@ -15,11 +15,12 @@
 
 <body>
     <nav>
+        <p><a href="index.html">home</a></p>
         <p>log in</p>
         <p>sign up</p>
     </nav>
 
-    <main>
+    <main id="timer_grid">
         <div id="timer">
             <div id="mode">
                 <span>pomodoro</span>
@@ -31,28 +32,34 @@
                     <h1>25:00</h1>
                     <p>pomodoro</p>
                 </div>
+                <p>work on:</p>
+                <h2>Milk the cat</h2>
+                <div class="button">
+                    <p>start</p>
+                </div>
             </div>
-            <p>work on:</p>
-            <h2>Milk the cat</h2>
-            <div class="button">start</div>
         </div>
+
         <div id="tasks">
             <div id="todo">
                 <h2>To Do</h2>
-                <div>
+                <div id="todo_add">
                     <span>+</span>
                     <span>Add</span>
                 </div>
                 <div>Read a book</div>
             </div>
             <div id="done">
+                <h2>Done</h2>
                 <div>Re-design a website</div>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>KEA Copenhagen, 02/2022 | This is a student project</p>
+        <span>KEA Copenhagen, 02/2022</span>
+        <span>|</span>
+        <span>This is a student project</span>
     </footer>
 </body>
 
